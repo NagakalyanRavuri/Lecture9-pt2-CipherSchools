@@ -1,0 +1,23 @@
+package oops;
+
+public class MethodOverloading {
+	class demo{
+		void A() {
+		System.out.println("Ihave no parameters");	
+		}
+		void B(int a) {
+			System.out.println(a);
+		}
+		void C(int a,int b) {
+			System.out.println(a+" "+b);
+		}
+	}
+	public static void main(String[] args) {
+		MethodOverloading outerObject = new MethodOverloading();
+		demo d = outerObject.new demo();
+		d.A();
+		d.B(13);
+		d.C(12, 14);
+	}
+
+}
