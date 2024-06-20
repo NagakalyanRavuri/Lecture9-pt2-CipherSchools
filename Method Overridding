@@ -1,0 +1,21 @@
+package oops;
+class A{
+	void name(){
+		System.out.println("My name is raju");//override method
+	}
+}
+class B extends A{
+	void name(){
+		System.out.println("My name is ravi");//overridden method
+	}
+}
+
+public class MethodOverriding {
+
+	public static void main(String[] args) {
+		A a1 = new A();
+		a1.name();
+
+	}
+
+}
